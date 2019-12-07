@@ -1,0 +1,58 @@
+- name: 1-р хэсэг
+  lessons:
+    - name: Удиртгал
+      hard: 1
+    - name: Вэб технологийн тухай
+      hard: 2
+    - name: git ашиглах тухай
+      hard: 1
+    - name: Хөгжүүлэлтийн орчин бэлтгэх
+      hard: 2
+    - name: PHP composer
+      hard: 1
+    - name: Yii framework-ийн тухай
+      hard: 1
+    - name: Анхны төсөл үүсгэх
+      hard: 3
+    - name: Статик хуудас, холбоос хийх
+      hard: 2
+    - name: Тохиргоонууд
+      hard: 2
+
+- name: 2-р хэсэг
+  lessons:
+    - name: Системийн зохиомж
+      hard: 3
+    - name: Yii-ийн туслах багажууд
+      hard: 2
+    - name: Модел үүсгэх
+      hard: 3
+    - name: Контроллер үүсгэх
+      hard: 3
+    - name: Харагдацтай холбох
+      hard: 3
+    - name: Файлтай ажиллах
+      hard: 3
+    - name: Хэрэглэгчийн эрхийн зохицуулалт
+      hard: 2
+    - name: Single Sign On / Social логин
+      hard: 2
+
+- name: 3-р хэсэг
+  lessons:
+    - name: Вэб сервер, ачаалал тэнцүүлэх
+      hard: 1
+    - name: Модуль ашиглах, үүсгэх
+      hard: 2
+    - name: Өгөгдлийг харуулах модулиуд
+      hard: 3
+    - name: Хайлтын системд орох
+      hard: 2
+    - name: Мэйлтэй ажиллах
+      hard: 2
+    - name: Вэб сервис
+      hard: 2
+    - name: Комплекс системүүд
+      hard: 3
+    - name: Дата анализ
+      hard: 3

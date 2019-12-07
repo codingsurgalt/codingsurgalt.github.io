@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Хэлэлцэх</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <link rel="stylesheet" href="/assets/cal.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <div class="navbar-item">
+
+                <img src="/assets/images/yii_logo_light.svg" width="150">-ийг
+                бүрэн ашиглаж сурцгаая
+            </div>
+
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+
+            </div>
+
+            <div class="navbar-end">
+                <a class="navbar-item" href="/">
+                    Эхлэл
+                </a>
+
+                <a class="navbar-item" href="discuss">
+                    Олон нийт
+                </a>
+
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a href="https://forms.gle/ASJBpuvYVESFAUiB6" target="_blank" class="button is-primary">
+                            <strong>Бүртгүүлэх</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+    <div class="hero-body">
+        <div class="container">
+
+            <h1 class="title is-1">Нийтийн хэлэлцүүлэг</h1>
+            <h2 class="subtitle">
+                Та сургалттай холбоотой асуух асуулт, санал хүсэлтээ нээлттэй бичнэ үү.
+            </h2>
+            <div id="disqus_thread"></div>
+        </div>
+    </div>
+</section>
+
+
+<section class="hero is-dark">
+    <div class="hero-body">
+
+        <div class="container">
+            <div class="columns is-multiline">
+                <div class="column is-full">
+                    <div class="level">
+                        <div class="level-left">
+                            <div class="level-left">
+                                <h5 class="title is-3" id="sched">Хичээлийн хуваарь</h5>
+                            </div>
+                        </div>
+                        <div class="level-right">
+                            <div class="level-right">
+                                <h5 class="title is-3">2020 оны 1-р сар</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <p>
+                        <b>Эхлэх огноо:</b> <i>2020.01.04</i>-ний өглөө 10:00
+                    </p>
+                    <p>
+                        <b>Даваа, Мягмар гарагт:</b> 19:00 ~ 21:00
+                    </p>
+                    <p>
+                        <b>Бямба гарагт:</b> 10:00 ~ 15:00, дундаа 1 цагийн үдийн завсарлагатай
+                    </p>
+                </div>
+                <div class="column is-8">
+                    <ul class="cal">
+                        
+                        
+                        <li class="dayName has-text-white">
+                            Да
+                        </li>
+                        
+                        <li class="dayName has-text-white">
+                            Мя
+                        </li>
+                        
+                        <li class="dayName has-text-white">
+                            Лх
+                        </li>
+                        
+                        <li class="dayName has-text-white">
+                            Пү
+                        </li>
+                        
+                        <li class="dayName has-text-white">
+                            Ба
+                        </li>
+                        
+                        <li class="dayName has-text-white">
+                            Бя
+                        </li>
+                        
+                        <li class="dayName has-text-white">
+                            Ня
+                        </li>
+                        
+                        
+                        <li class="day has-text-grey-lighter">
+                            30
+                        </li>
+                        
+                        <li class="day has-text-grey-lighter">
+                            31
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-text-white">
+                            1
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-text-white">
+                            2
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-text-white">
+                            3
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-background-success has-text-white">
+                            4
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-text-white">
+                            5
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-background-success has-text-white">
+                            6
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-background-success has-text-white">
+                            7
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-text-white">
+                            8
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-text-white">
+                            9
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-text-white">
+                            10
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-background-success has-text-white">
+                            11
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-text-white">
+                            12
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-background-success has-text-white">
+                            13
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-background-success has-text-white">
+                            14
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-text-white">
+                            15
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-text-white">
+                            16
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-text-white">
+                            17
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-background-success has-text-white">
+                            18
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-text-white">
+                            19
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-background-success has-text-white">
+                            20
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-background-success has-text-white">
+                            21
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-text-white">
+                            22
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-text-white">
+                            23
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-text-white">
+                            24
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-background-success has-text-white">
+                            25
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-text-white">
+                            26
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-background-success has-text-white">
+                            27
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-background-success has-text-white">
+                            28
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-text-white">
+                            29
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-text-white">
+                            30
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-text-white">
+                            31
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-text-grey-lighter">
+                            1
+                        </li>
+                        
+                        <li class="day has-text-grey-lighter">
+                            2
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container content has-text-centered">
+            <a class="button is-success is-large mt-2">
+                <strong>Бүртгүүлэх</strong>
+            </a>
+        </div>
+    </div>
+</section>
+
+<script>
+
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function () { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://codingsurgalt.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+        Disqus.</a></noscript>
+
+</body>
+
+</html>

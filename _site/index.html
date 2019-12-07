@@ -1,74 +1,1367 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html>
+
+<head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Your awesome title | Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</title>
-<meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="Your awesome title" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
-<meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
-<meta property="og:site_name" content="Your awesome title" />
-<script type="application/ld+json">
-{"@type":"WebSite","url":"http://localhost:4000/","headline":"Your awesome title","name":"Your awesome title","description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Your awesome title" /></head>
-<body><header class="site-header" role="banner">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+  <link rel="stylesheet" href="/assets/cal.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
 
-  <div class="wrapper"><a class="site-title" rel="author" href="/">Your awesome title</a><nav class="site-nav">
-        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-        <label for="nav-trigger">
-          <span class="menu-icon">
-            <svg viewBox="0 0 18 15" width="18px" height="15px">
-              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
-            </svg>
-          </span>
-        </label>
+<body>
 
-        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
-      </nav></div>
-</header>
-<main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        <div class="home">
-<h2 class="post-list-heading">Posts</h2>
-    <ul class="post-list"><li><span class="post-meta">Dec 5, 2019</span>
-        <h3>
-          <a class="post-link" href="/jekyll/update/2019/12/05/welcome-to-jekyll.html">
-            Welcome to Jekyll!
+  <section class="hero is-light is-fullheight">
+    <div class="hero-head">
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+            data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
           </a>
-        </h3></li></ul>
+        </div>
 
-    <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p></div>
+        <div class="mobile-nav is-block-mobile is-hidden-desktop">
+          <a class="navbar-item" href="/">
+            Эхлэл
+          </a>
 
-      </div>
-    </main><footer class="site-footer h-card">
-  <data class="u-url" href="/"></data>
+          <a class="navbar-item" href="discuss">
+            Олон нийт
+          </a>
 
-  <div class="wrapper">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-primary">
+                <strong>Бүртгүүлэх</strong>
+              </a>
+            </div>
+          </div>
+        </div>
 
-    <h2 class="footer-heading">Your awesome title</h2>
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">Your awesome title</li><li><a class="u-email" href="mailto:your-email@example.com">your-email@example.com</a></li></ul>
-      </div>
+          </div>
 
-      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/jekyll"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">jekyll</span></a></li><li><a href="https://www.twitter.com/jekyllrb"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">jekyllrb</span></a></li></ul>
-</div>
+          <div class="navbar-end">
+            <a class="navbar-item" href="/">
+              Эхлэл
+            </a>
 
-      <div class="footer-col footer-col-3">
-        <p>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</p>
+            <a class="navbar-item" href="discuss">
+              Олон нийт
+            </a>
+
+            <div class="navbar-item">
+              <div class="buttons">
+                <a href="https://forms.gle/ASJBpuvYVESFAUiB6" target="_blank" class="button is-primary">
+                  <strong>Бүртгүүлэх</strong>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title has-text-grey-dark">
+          <img src="/assets/images/yii_logo_light.svg" width="250" style="bottom: -15px;position: relative;">
+        </h1>
+        <h2 class="subtitle has-text-grey">
+          Full-stack вэб хөгжүүлэгч болоход хэрэгтэй бүхнийг заана
+        </h2>
+        <p>
+          Энэ фрэймвөркийг ашиглан энгийн танилцуулга вэбээс авхуулаад онлайн худалдаа, үйлчилгээний вэб систем хүртэл
+          хөгжүүлэх боломжтой.
+        </p>
       </div>
     </div>
+  </section>
 
-  </div>
+  <section class="hero">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title is-1">Сургалтын тухай</h1>
+            <div class="columns">
+                <div class="column is-8">
+                    <p>
+                        <b>Хэрэв та:</b><br>
+                        Код бичих анхан шатны мэдлэгтэй боловч яг вэб сайтыг хэрхэн хийх вэ хэмээн эргэлзэж байна уу?
+                        <br>
+                        Ямар фреймвөрк дээр хийх нь зөв бэ хэмээн гайхаад байна уу? <br>
+                        Ямар програмчлалын хэл сурч вэб хийх вэ гэж эргэлзэж байна уу? <br>
+                        Yii framework-ийг сурах гээд сайн ойлгохгүй байна уу? <br>
+                        Хийсэн вэбээ яаж серверт байршуулах тухайгаа сайн ойлгохгүй байна уу? <br>
+                        Full-stack вэб хөгжүүлэгч болохыг зорьж байна уу?
+                    </p>
+                    <br>
+                    <p>
+                        <b>Тэгвэл би:</b><br>
+                        Өөрийн туршлага дээр үндэслэн бэлдсэн PHP хэлний Yii framework-ийг ашиглаж вэб бүтээх
+                        сургалтандаа таныг урьж байна.
+                    </p>
 
-</footer>
+                </div>
+                <div class="column is-4">
+                    <p>
+                        <b>Нийт сурагчийн тоо:</b><br>
+                        8 - 10
+                    </p>
+                    <br>
+                    <p>
+                        <b>Тавигдах шаардлага:</b><br>
+                        Код бичих анхан шатны эсвэл илүү мэдлэгтэй байх
+                        <br>
+                        <i>
+                            * Хэрэв та салаалсан, давталтат алгоритм мэддэг, хувьсагч, өгөгдлийн төрлийн тухай ойлголттой бол анхан шатны мэдлэгтэй.
+                        </i>
+                    </p>
+                    <br>
+                    <p>
+                        <b>Хичээл эхлэх огноо:</b><br>
+                        2020.01.04-ний 10:00 цагт
+                    </p>
+                    <br>
+                    <p>
+                        <b>Хичээлийн хуваарь:</b><br>
+                        <a href="#sched">Энд дарж үзнэ үү</a>
+                    </p>
+                    <br>
+
+                    <p>
+                        <b>Үнэ:</b><br>
+                        350 000₮
+                    </p>
+                </div>
+            </div>
+
+            <h3 class="title is-1">Багшийн мэдээлэл</h3>
+            <p>
+                <div>
+                    <b>Нэр: </b>
+                    <a href="https://fb.com/enk.sh">Майнбаярын Энхболд</a>
+                </div>
+                <div>
+                    <b>Мэргэжил: </b>
+                    Компьютерийн ШУ-ны инженер мэргэжилтэй
+                </div>
+                <div>
+                    <b>Yii framework дээр ажилласан туршлага: </b>
+                    2013 оноос хойш
+                </div>
+                <div>
+                    <b>Онцлог: </b>
+                    Програм хангамжийн инженерийн ажлын туршлага
+                    дээр суурилан гаргасан сургалтын хөтөлбөрийн дагуу хичээлийг орно.
+                </div>
+            </p>
+        </div>
+    </div>
+    <hr>
+</section>
+
+
+<section class="section">
+    <div class="container content">
+        <h1 class="title is-1">Хичээлийн хөтөлбөр</h1>
+        <p>
+            <span class="icon has-text-danger">
+                <i class="fas fa-star"></i>
+            </span><span class="icon has-text-grey">
+                <i class="fas fa-star"></i>
+            </span><span class="icon has-text-grey">
+                <i class="fas fa-star"></i>
+            </span> &ndash; хялбар
+
+            <br>
+            <span class="icon has-text-danger">
+                <i class="fas fa-star"></i>
+            </span><span class="icon has-text-danger">
+                <i class="fas fa-star"></i>
+            </span><span class="icon has-text-grey">
+                <i class="fas fa-star"></i>
+            </span> &ndash; дунд
+            <br>
+            <span class="icon has-text-danger">
+                <i class="fas fa-star"></i>
+            </span><span class="icon has-text-danger">
+                <i class="fas fa-star"></i>
+            </span><span class="icon has-text-danger">
+                <i class="fas fa-star"></i>
+            </span> &ndash; хэцүү
+        </p>
+        <div class="columns is-multiline">
+
+            
+            <div class="column is-4">
+                <article class="message is-light">
+                    <div class="message-header">
+                        <span>1-р хэсэг</span>
+                    </div>
+                    <div class="message-body">
+                        <ol>
+                            
+                            <li>
+                                <div class="level">
+                                    <div class="level-left">
+                                        <div class="level-item">
+                                            Удиртгал
+                                        </div>
+                                    </div>
+                                    <div class="level-right">
+                                        <div class="level-item">
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+
+                                            
+                                            <span class="icon has-text-grey">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            <span class="icon has-text-grey">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <div class="level">
+                                    <div class="level-left">
+                                        <div class="level-item">
+                                            Вэб технологийн тухай
+                                        </div>
+                                    </div>
+                                    <div class="level-right">
+                                        <div class="level-item">
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+
+                                            
+                                            <span class="icon has-text-grey">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <div class="level">
+                                    <div class="level-left">
+                                        <div class="level-item">
+                                            git ашиглах тухай
+                                        </div>
+                                    </div>
+                                    <div class="level-right">
+                                        <div class="level-item">
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+
+                                            
+                                            <span class="icon has-text-grey">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            <span class="icon has-text-grey">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <div class="level">
+                                    <div class="level-left">
+                                        <div class="level-item">
+                                            Хөгжүүлэлтийн орчин бэлтгэх
+                                        </div>
+                                    </div>
+                                    <div class="level-right">
+                                        <div class="level-item">
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+
+                                            
+                                            <span class="icon has-text-grey">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <div class="level">
+                                    <div class="level-left">
+                                        <div class="level-item">
+                                            PHP composer
+                                        </div>
+                                    </div>
+                                    <div class="level-right">
+                                        <div class="level-item">
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+
+                                            
+                                            <span class="icon has-text-grey">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            <span class="icon has-text-grey">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <div class="level">
+                                    <div class="level-left">
+                                        <div class="level-item">
+                                            Yii framework-ийн тухай
+                                        </div>
+                                    </div>
+                                    <div class="level-right">
+                                        <div class="level-item">
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+
+                                            
+                                            <span class="icon has-text-grey">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            <span class="icon has-text-grey">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <div class="level">
+                                    <div class="level-left">
+                                        <div class="level-item">
+                                            Анхны төсөл үүсгэх
+                                        </div>
+                                    </div>
+                                    <div class="level-right">
+                                        <div class="level-item">
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <div class="level">
+                                    <div class="level-left">
+                                        <div class="level-item">
+                                            Статик хуудас, холбоос хийх
+                                        </div>
+                                    </div>
+                                    <div class="level-right">
+                                        <div class="level-item">
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+
+                                            
+                                            <span class="icon has-text-grey">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <div class="level">
+                                    <div class="level-left">
+                                        <div class="level-item">
+                                            Тохиргоонууд
+                                        </div>
+                                    </div>
+                                    <div class="level-right">
+                                        <div class="level-item">
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+
+                                            
+                                            <span class="icon has-text-grey">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                        </ol>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="column is-4">
+                <article class="message is-light">
+                    <div class="message-header">
+                        <span>2-р хэсэг</span>
+                    </div>
+                    <div class="message-body">
+                        <ol>
+                            
+                            <li>
+                                <div class="level">
+                                    <div class="level-left">
+                                        <div class="level-item">
+                                            Системийн зохиомж
+                                        </div>
+                                    </div>
+                                    <div class="level-right">
+                                        <div class="level-item">
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <div class="level">
+                                    <div class="level-left">
+                                        <div class="level-item">
+                                            Yii-ийн туслах багажууд
+                                        </div>
+                                    </div>
+                                    <div class="level-right">
+                                        <div class="level-item">
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+
+                                            
+                                            <span class="icon has-text-grey">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <div class="level">
+                                    <div class="level-left">
+                                        <div class="level-item">
+                                            Модел үүсгэх
+                                        </div>
+                                    </div>
+                                    <div class="level-right">
+                                        <div class="level-item">
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <div class="level">
+                                    <div class="level-left">
+                                        <div class="level-item">
+                                            Контроллер үүсгэх
+                                        </div>
+                                    </div>
+                                    <div class="level-right">
+                                        <div class="level-item">
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <div class="level">
+                                    <div class="level-left">
+                                        <div class="level-item">
+                                            Харагдацтай холбох
+                                        </div>
+                                    </div>
+                                    <div class="level-right">
+                                        <div class="level-item">
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <div class="level">
+                                    <div class="level-left">
+                                        <div class="level-item">
+                                            Файлтай ажиллах
+                                        </div>
+                                    </div>
+                                    <div class="level-right">
+                                        <div class="level-item">
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <div class="level">
+                                    <div class="level-left">
+                                        <div class="level-item">
+                                            Хэрэглэгчийн эрхийн зохицуулалт
+                                        </div>
+                                    </div>
+                                    <div class="level-right">
+                                        <div class="level-item">
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+
+                                            
+                                            <span class="icon has-text-grey">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <div class="level">
+                                    <div class="level-left">
+                                        <div class="level-item">
+                                            Single Sign On / Social логин
+                                        </div>
+                                    </div>
+                                    <div class="level-right">
+                                        <div class="level-item">
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+
+                                            
+                                            <span class="icon has-text-grey">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                        </ol>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="column is-4">
+                <article class="message is-light">
+                    <div class="message-header">
+                        <span>3-р хэсэг</span>
+                    </div>
+                    <div class="message-body">
+                        <ol>
+                            
+                            <li>
+                                <div class="level">
+                                    <div class="level-left">
+                                        <div class="level-item">
+                                            Вэб сервер, ачаалал тэнцүүлэх
+                                        </div>
+                                    </div>
+                                    <div class="level-right">
+                                        <div class="level-item">
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+
+                                            
+                                            <span class="icon has-text-grey">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            <span class="icon has-text-grey">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <div class="level">
+                                    <div class="level-left">
+                                        <div class="level-item">
+                                            Модуль ашиглах, үүсгэх
+                                        </div>
+                                    </div>
+                                    <div class="level-right">
+                                        <div class="level-item">
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+
+                                            
+                                            <span class="icon has-text-grey">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <div class="level">
+                                    <div class="level-left">
+                                        <div class="level-item">
+                                            Өгөгдлийг харуулах модулиуд
+                                        </div>
+                                    </div>
+                                    <div class="level-right">
+                                        <div class="level-item">
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <div class="level">
+                                    <div class="level-left">
+                                        <div class="level-item">
+                                            Хайлтын системд орох
+                                        </div>
+                                    </div>
+                                    <div class="level-right">
+                                        <div class="level-item">
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+
+                                            
+                                            <span class="icon has-text-grey">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <div class="level">
+                                    <div class="level-left">
+                                        <div class="level-item">
+                                            Мэйлтэй ажиллах
+                                        </div>
+                                    </div>
+                                    <div class="level-right">
+                                        <div class="level-item">
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+
+                                            
+                                            <span class="icon has-text-grey">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <div class="level">
+                                    <div class="level-left">
+                                        <div class="level-item">
+                                            Вэб сервис
+                                        </div>
+                                    </div>
+                                    <div class="level-right">
+                                        <div class="level-item">
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+
+                                            
+                                            <span class="icon has-text-grey">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <div class="level">
+                                    <div class="level-left">
+                                        <div class="level-item">
+                                            Комплекс системүүд
+                                        </div>
+                                    </div>
+                                    <div class="level-right">
+                                        <div class="level-item">
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <div class="level">
+                                    <div class="level-left">
+                                        <div class="level-item">
+                                            Дата анализ
+                                        </div>
+                                    </div>
+                                    <div class="level-right">
+                                        <div class="level-item">
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            
+                                            
+
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                        </ol>
+                    </div>
+                </article>
+            </div>
+            
+
+        </div>
+
+        <p>
+            Нэг фрэймвөркийг ойлгоод авчихад л бусад янз бүрийн <b>комплекс</b> фрэймвөркүүдийг ойлгоход хялбар
+            болно.
+        </p>
+
+        <article class="message is-success">
+            <div class="message-body content">
+                <span class="icon has-text-success is-large">
+                    <i class="fas fa-plus fa-3x"></i>
+                </span>
+                Энэ сургалтаар та зөвхөн Yii framework-ийн тухай мэдлэг аваад зогсохгүй вэб хөгжүүлэгчдийн өдөр тутамд
+                хэрэг болдог дараах зүйлсийг мөн мэдэж авна.
+                <ul>
+                    <li>git</li>
+                    <li>Web service</li>
+                    <li>Өгөгдлийн сан</li>
+                    <li>Вэб сервер</li>
+                    <li>HTML 5 / JS / CSS 3</li>
+                    <li>REST API</li>
+                    <li>Single Sign On (SSO)</li>
+                    <li>Search Engine Optimization (SEO)</li>
+                </ul>
+            </div>
+        </article>
+    </div>
+</section>
+
+
+<section class="hero is-dark">
+    <div class="hero-body">
+
+        <div class="container">
+            <div class="columns is-multiline">
+                <div class="column is-full">
+                    <div class="level">
+                        <div class="level-left">
+                            <div class="level-left">
+                                <h5 class="title is-3" id="sched">Хичээлийн хуваарь</h5>
+                            </div>
+                        </div>
+                        <div class="level-right">
+                            <div class="level-right">
+                                <h5 class="title is-3">2020 оны 1-р сар</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <p>
+                        <b>Эхлэх огноо:</b> <i>2020.01.04</i>-ний өглөө 10:00
+                    </p>
+                    <p>
+                        <b>Даваа, Мягмар гарагт:</b> 19:00 ~ 21:00
+                    </p>
+                    <p>
+                        <b>Бямба гарагт:</b> 10:00 ~ 15:00, дундаа 1 цагийн үдийн завсарлагатай
+                    </p>
+                </div>
+                <div class="column is-8">
+                    <ul class="cal">
+                        
+                        
+                        <li class="dayName has-text-white">
+                            Да
+                        </li>
+                        
+                        <li class="dayName has-text-white">
+                            Мя
+                        </li>
+                        
+                        <li class="dayName has-text-white">
+                            Лх
+                        </li>
+                        
+                        <li class="dayName has-text-white">
+                            Пү
+                        </li>
+                        
+                        <li class="dayName has-text-white">
+                            Ба
+                        </li>
+                        
+                        <li class="dayName has-text-white">
+                            Бя
+                        </li>
+                        
+                        <li class="dayName has-text-white">
+                            Ня
+                        </li>
+                        
+                        
+                        <li class="day has-text-grey-lighter">
+                            30
+                        </li>
+                        
+                        <li class="day has-text-grey-lighter">
+                            31
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-text-white">
+                            1
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-text-white">
+                            2
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-text-white">
+                            3
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-background-success has-text-white">
+                            4
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-text-white">
+                            5
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-background-success has-text-white">
+                            6
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-background-success has-text-white">
+                            7
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-text-white">
+                            8
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-text-white">
+                            9
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-text-white">
+                            10
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-background-success has-text-white">
+                            11
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-text-white">
+                            12
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-background-success has-text-white">
+                            13
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-background-success has-text-white">
+                            14
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-text-white">
+                            15
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-text-white">
+                            16
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-text-white">
+                            17
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-background-success has-text-white">
+                            18
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-text-white">
+                            19
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-background-success has-text-white">
+                            20
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-background-success has-text-white">
+                            21
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-text-white">
+                            22
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-text-white">
+                            23
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-text-white">
+                            24
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-text-white">
+                            25
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-text-white">
+                            26
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-text-white">
+                            27
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-text-white">
+                            28
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-text-white">
+                            29
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-text-white">
+                            30
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-text-white">
+                            31
+                        </li>
+                        
+                        
+                        
+                        <li class="day has-text-grey-lighter">
+                            1
+                        </li>
+                        
+                        <li class="day has-text-grey-lighter">
+                            2
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container content has-text-centered">
+            <a href="https://forms.gle/ASJBpuvYVESFAUiB6" target="_blank" class="button is-success is-large mt-2">
+                <strong>Бүртгүүлэх</strong>
+            </a>
+        </div>
+    </div>
+</section>
+
+  <footer>
+    <div class="section">
+      <div class="container">
+        Утас: <a href="tel:+97688859208">+976 - 88859208</a>
+        <br>
+        И-мэйл: <a href="mailto:enkh.mon@gmail.com">enkh.mon@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+
 </body>
 
 </html>

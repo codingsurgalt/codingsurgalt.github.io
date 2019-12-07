@@ -1,0 +1,112 @@
+---
+layout: default_pages
+title: Хэлэлцэх
+permalink: /discuss/
+---
+
+<section class="hero">
+    <div class="hero-body">
+        <div class="container">
+
+            <h1 class="title is-1">Нийтийн хэлэлцүүлэг</h1>
+            <h2 class="subtitle">
+                Та сургалттай холбоотой асуух асуулт, санал хүсэлтээ нээлттэй бичнэ үү.
+            </h2>
+            <div id="disqus_thread"></div>
+        </div>
+    </div>
+</section>
+
+
+<section class="hero is-dark">
+    <div class="hero-body">
+
+        <div class="container">
+            <div class="columns is-multiline">
+                <div class="column is-full">
+                    <div class="level">
+                        <div class="level-left">
+                            <div class="level-left">
+                                <h5 class="title is-3" id="sched">Хичээлийн хуваарь</h5>
+                            </div>
+                        </div>
+                        <div class="level-right">
+                            <div class="level-right">
+                                <h5 class="title is-3">2020 оны 1-р сар</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <p>
+                        <b>Эхлэх огноо:</b> <i>2020.01.04</i>-ний өглөө 10:00
+                    </p>
+                    <p>
+                        <b>Даваа, Мягмар гарагт:</b> 19:00 ~ 21:00
+                    </p>
+                    <p>
+                        <b>Бямба гарагт:</b> 10:00 ~ 15:00, дундаа 1 цагийн үдийн завсарлагатай
+                    </p>
+                </div>
+                <div class="column is-8">
+                    <ul class="cal">
+                        {% assign dayNames = "Да, Мя, Лх, Пү, Ба, Бя, Ня" | split: ", " %}
+                        {% for i in dayNames %}
+                        <li class="dayName has-text-white">
+                            {{ i }}
+                        </li>
+                        {% endfor %}
+                        {% for i in (30..31) %}
+                        <li class="day has-text-grey-lighter">
+                            {{ i }}
+                        </li>
+                        {% endfor %}
+                        {% for i in (1..31) %}
+                        {% if i == 6 or i == 7 or i == 13 or i == 14 or i == 20 or i == 21 or i == 27 or i == 28 or i == 4  or i == 11 or i == 18 or i == 25 %}
+                        <li class="day has-background-success has-text-white">
+                            {{ i }}
+                        </li>
+                        {% else %}
+                        <li class="day has-text-white">
+                            {{ i }}
+                        </li>
+                        {% endif %}
+                        {% endfor %}
+                        {% for i in (1..2) %}
+                        <li class="day has-text-grey-lighter">
+                            {{ i }}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container content has-text-centered">
+            <a class="button is-success is-large mt-2">
+                <strong>Бүртгүүлэх</strong>
+            </a>
+        </div>
+    </div>
+</section>
+
+<script>
+
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function () { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://codingsurgalt.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+        Disqus.</a></noscript>

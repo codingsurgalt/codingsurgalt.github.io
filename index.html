@@ -1,0 +1,264 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: default
+---
+
+<section class="hero">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title is-1">Сургалтын тухай</h1>
+            <div class="columns">
+                <div class="column is-8">
+                    <p>
+                        <b>Хэрэв та:</b><br>
+                        Код бичих анхан шатны мэдлэгтэй боловч яг вэб сайтыг хэрхэн хийх вэ хэмээн эргэлзэж байна уу?
+                        <br>
+                        Ямар фреймвөрк дээр хийх нь зөв бэ хэмээн гайхаад байна уу? <br>
+                        Ямар програмчлалын хэл сурч вэб хийх вэ гэж эргэлзэж байна уу? <br>
+                        Yii framework-ийг сурах гээд сайн ойлгохгүй байна уу? <br>
+                        Хийсэн вэбээ яаж серверт байршуулах тухайгаа сайн ойлгохгүй байна уу? <br>
+                        Full-stack вэб хөгжүүлэгч болохыг зорьж байна уу?
+                    </p>
+                    <br>
+                    <p>
+                        <b>Тэгвэл би:</b><br>
+                        Өөрийн туршлага дээр үндэслэн бэлдсэн PHP хэлний Yii framework-ийг ашиглаж вэб бүтээх
+                        сургалтандаа таныг урьж байна.
+                    </p>
+
+                </div>
+                <div class="column is-4">
+                    <p>
+                        <b>Нийт сурагчийн тоо:</b><br>
+                        8 - 10
+                    </p>
+                    <br>
+                    <p>
+                        <b>Тавигдах шаардлага:</b><br>
+                        Код бичих анхан шатны эсвэл илүү мэдлэгтэй байх
+                        <br>
+                        <i>
+                            * Хэрэв та салаалсан, давталтат алгоритм мэддэг, хувьсагч, өгөгдлийн төрлийн тухай ойлголттой бол анхан шатны мэдлэгтэй.
+                        </i>
+                    </p>
+                    <br>
+                    <p>
+                        <b>Хичээл эхлэх огноо:</b><br>
+                        2020.01.04-ний 10:00 цагт
+                    </p>
+                    <br>
+                    <p>
+                        <b>Хичээлийн хуваарь:</b><br>
+                        <a href="#sched">Энд дарж үзнэ үү</a>
+                    </p>
+                    <br>
+
+                    <p>
+                        <b>Үнэ:</b><br>
+                        350 000₮
+                    </p>
+                </div>
+            </div>
+
+            <h3 class="title is-1">Багшийн мэдээлэл</h3>
+            <p>
+                <div>
+                    <b>Нэр: </b>
+                    <a href="https://fb.com/enk.sh">Майнбаярын Энхболд</a>
+                </div>
+                <div>
+                    <b>Мэргэжил: </b>
+                    Компьютерийн ШУ-ны инженер мэргэжилтэй
+                </div>
+                <div>
+                    <b>Yii framework дээр ажилласан туршлага: </b>
+                    2013 оноос хойш
+                </div>
+                <div>
+                    <b>Онцлог: </b>
+                    Програм хангамжийн инженерийн ажлын туршлага
+                    дээр суурилан гаргасан сургалтын хөтөлбөрийн дагуу хичээлийг орно.
+                </div>
+            </p>
+        </div>
+    </div>
+    <hr>
+</section>
+
+
+<section class="section">
+    <div class="container content">
+        <h1 class="title is-1">Хичээлийн хөтөлбөр</h1>
+        <p>
+            <span class="icon has-text-danger">
+                <i class="fas fa-star"></i>
+            </span><span class="icon has-text-grey">
+                <i class="fas fa-star"></i>
+            </span><span class="icon has-text-grey">
+                <i class="fas fa-star"></i>
+            </span> &ndash; хялбар
+
+            <br>
+            <span class="icon has-text-danger">
+                <i class="fas fa-star"></i>
+            </span><span class="icon has-text-danger">
+                <i class="fas fa-star"></i>
+            </span><span class="icon has-text-grey">
+                <i class="fas fa-star"></i>
+            </span> &ndash; дунд
+            <br>
+            <span class="icon has-text-danger">
+                <i class="fas fa-star"></i>
+            </span><span class="icon has-text-danger">
+                <i class="fas fa-star"></i>
+            </span><span class="icon has-text-danger">
+                <i class="fas fa-star"></i>
+            </span> &ndash; хэцүү
+        </p>
+        <div class="columns is-multiline">
+
+            {% for group in site.data.groups %}
+            <div class="column is-4">
+                <article class="message is-light">
+                    <div class="message-header">
+                        <span>{{ group.name }}</span>
+                    </div>
+                    <div class="message-body">
+                        <ol>
+                            {% for item in group.lessons %}
+                            <li>
+                                <div class="level">
+                                    <div class="level-left">
+                                        <div class="level-item">
+                                            {{ item.name }}
+                                        </div>
+                                    </div>
+                                    <div class="level-right">
+                                        <div class="level-item">
+                                            {% assign k = 3 %}
+                                            {% for counter in (1..item.hard) %}
+                                            <span class="icon has-text-danger">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            {% assign k = k | minus: 1 %}
+                                            {% endfor %}
+
+                                            {% for counter in (1..k) %}
+                                            <span class="icon has-text-grey">
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            {% endfor %}
+                        </ol>
+                    </div>
+                </article>
+            </div>
+            {% endfor %}
+
+        </div>
+
+        <p>
+            Нэг фрэймвөркийг ойлгоод авчихад л бусад янз бүрийн <b>комплекс</b> фрэймвөркүүдийг ойлгоход хялбар
+            болно.
+        </p>
+
+        <article class="message is-success">
+            <div class="message-body content">
+                <span class="icon has-text-success is-large">
+                    <i class="fas fa-plus fa-3x"></i>
+                </span>
+                Энэ сургалтаар та зөвхөн Yii framework-ийн тухай мэдлэг аваад зогсохгүй вэб хөгжүүлэгчдийн өдөр тутамд
+                хэрэг болдог дараах зүйлсийг мөн мэдэж авна.
+                <ul>
+                    <li>git</li>
+                    <li>Web service</li>
+                    <li>Өгөгдлийн сан</li>
+                    <li>Вэб сервер</li>
+                    <li>HTML 5 / JS / CSS 3</li>
+                    <li>REST API</li>
+                    <li>Single Sign On (SSO)</li>
+                    <li>Search Engine Optimization (SEO)</li>
+                </ul>
+            </div>
+        </article>
+    </div>
+</section>
+
+
+<section class="hero is-dark">
+    <div class="hero-body">
+
+        <div class="container">
+            <div class="columns is-multiline">
+                <div class="column is-full">
+                    <div class="level">
+                        <div class="level-left">
+                            <div class="level-left">
+                                <h5 class="title is-3" id="sched">Хичээлийн хуваарь</h5>
+                            </div>
+                        </div>
+                        <div class="level-right">
+                            <div class="level-right">
+                                <h5 class="title is-3">2020 оны 1-р сар</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <p>
+                        <b>Эхлэх огноо:</b> <i>2020.01.04</i>-ний өглөө 10:00
+                    </p>
+                    <p>
+                        <b>Даваа, Мягмар гарагт:</b> 19:00 ~ 21:00
+                    </p>
+                    <p>
+                        <b>Бямба гарагт:</b> 10:00 ~ 15:00, дундаа 1 цагийн үдийн завсарлагатай
+                    </p>
+                </div>
+                <div class="column is-8">
+                    <ul class="cal">
+                        {% assign dayNames = "Да, Мя, Лх, Пү, Ба, Бя, Ня" | split: ", " %}
+                        {% for i in dayNames %}
+                        <li class="dayName has-text-white">
+                            {{ i }}
+                        </li>
+                        {% endfor %}
+                        {% for i in (30..31) %}
+                        <li class="day has-text-grey-lighter">
+                            {{ i }}
+                        </li>
+                        {% endfor %}
+                        {% for i in (1..31) %}
+                        {% if i == 6 or i == 7 or i == 13 or i == 14 or i == 20 or i == 21 or i == 4  or i == 11 or i == 18 %}
+                        <li class="day has-background-success has-text-white">
+                            {{ i }}
+                        </li>
+                        {% else %}
+                        <li class="day has-text-white">
+                            {{ i }}
+                        </li>
+                        {% endif %}
+                        {% endfor %}
+                        {% for i in (1..2) %}
+                        <li class="day has-text-grey-lighter">
+                            {{ i }}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container content has-text-centered">
+            <a href="https://forms.gle/ASJBpuvYVESFAUiB6" target="_blank" class="button is-success is-large mt-2">
+                <strong>Бүртгүүлэх</strong>
+            </a>
+        </div>
+    </div>
+</section>
